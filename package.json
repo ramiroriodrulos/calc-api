@@ -1,0 +1,29 @@
+{
+    "name": "calc-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "./bin/www",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frlp-utn-ingsoft/calc-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frlp-utn-ingsoft/calc-api/issues"
+    },
+    "homepage": "https://github.com/frlp-utn-ingsoft/calc-api#readme",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "detect-port": "^1.3.0",
+        "express": "^4.17.3",
+        "morgan": "^1.10.0",
+        "sequelize": "^6.19.0",
+        "sqlite3": "^5.0.4"
+    }
+}

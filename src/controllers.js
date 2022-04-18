@@ -40,9 +40,4 @@ router.get("/history", async function (req, res) {
     return res.send({ result: "No implementado" });
 });
 
-if (process.env.NODE_ENV !== "production") {
-    const swagger = require("../doc/swagger.js");
-    router.use("/api-docs", swagger.serve, swagger.setup());
-}
-
 module.exports = router;

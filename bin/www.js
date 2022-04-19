@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const http = require("http");
 const { createApp } = require("../src/app.js");
 const detectPort = require("detect-port");
@@ -50,7 +48,7 @@ function onError(error) {
 function onListening(server) {
     const { address, port } = server.address();
 
-    console.log(`Listening on http://${address}:${port}`);
+    console.log(`\nListening on http://${address}:${port}\n`);
 }
 
 startServer();

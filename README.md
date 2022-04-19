@@ -28,6 +28,10 @@ Simple calculator API
 
 ## API
 
+Todos los endpoints funcionan en http://localhost:3000.
+
+Si el puerto 3000 esta ocupado por otro servicio, se usa el siguiente puerto (3001, 3002, etc). Revisar la consola al iniciar el servicio.
+
 | Endpoint          | Method | Description                                     |
 | ----------------- | ------ | ----------------------------------------------- |
 | /api/v1/add/:a/:b | GET    | Add `a` and `b`. Returns the result             |

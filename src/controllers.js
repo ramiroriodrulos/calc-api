@@ -106,6 +106,22 @@ router.get("/pow/:a/:b", async function (req, res) {
     return res.send({ result });
 });
 
+router.get("/sqrt/:a", async function (req, res) {
+    const params = req.params;
+    const a = Number(params.a);
+    const result = Math.sqrt(a);
+
+    await Operation.create({
+        type: "SQRT",
+        args: {
+            a: a,
+        },
+        result,
+    });
+
+    return res.send({ result });
+});
+
 router.get("/history", async function (req, res) {
     return res.send({ result: "No implementado" });
 });

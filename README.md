@@ -38,4 +38,5 @@ Si el puerto 3000 esta ocupado por otro servicio, se usa el siguiente puerto (30
 | /api/v1/res/:a/:b | GET    | Rest `a` and `b`. Returns the result            |
 | /api/v1/mul/:a/:b | GET    | Multiply `a` and `b`. Returns the result        |
 | /api/v1/div/:a/:b | GET    | Divide `a` and `b`. Returns the result or Error |
+| /api/v1/pow/:a/:b | GET    | Pow `a` and `b`. Returns the result             |
 | /api/v1/hisotry   | GET    | Returns the operations history                  |
